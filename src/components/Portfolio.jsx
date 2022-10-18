@@ -1,49 +1,37 @@
 import React from 'react';
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-import installNode from '../assets/portfolio/installNode.jpg';
-import navbar from '../assets/portfolio/navbar.jpg';
-import reactParallax from '../assets/portfolio/reactParallax.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
-import reactWeather from '../assets/portfolio/reactWeather.jpg';
+import facebookClone from '../assets/portfolio/facebookClone.png';
+import HotelRooms from '../assets/portfolio/HotelAppRooms.png';
+import Hotel from '../assets/portfolio/HotelApp.png';
+import NewsMonkey from '../assets/portfolio/NewsMonkey.png';
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      link: 'https://www.google.com',
+      src: facebookClone,
+      link: 'https://github.com/poojaharugop8/Facebook-clone',
+      projectName: 'Facebook Clone',
     },
     {
       id: 2,
-      src: installNode,
-      link: '',
+      src: HotelRooms,
+      link: 'https://github.com/poojaharugop8/Hotel-Management-Reactjs-Microservices-',
+      projectName: 'Hotel Rooms',
     },
     {
       id: 3,
-      src: navbar,
-      link: '',
+      src: Hotel,
+      link: 'https://github.com/poojaharugop8/Hotel-Management-Reactjs-Microservices-',
+      projectName: 'Hotel App',
     },
     {
       id: 4,
-      src: reactParallax,
-      link: '',
-    },
-    {
-      id: 5,
-      src: reactSmooth,
-      link: '',
-    },
-    {
-      id: 6,
-      src: reactWeather,
-      link: '',
+      src: NewsMonkey,
+      link: 'https://github.com/poojaharugop8/NewsMonkey-Reactjs',
+      projectName: 'News Monkey',
     },
   ];
 
-  const handleChange = (link) => {
-    console.log(link);
-    return <a href={link} target='_blank' rel='noreferrer' />;
-  };
   return (
     <div
       name='portfolio'
@@ -57,15 +45,22 @@ const Portfolio = () => {
           <p className='py-6'>Checkout some of my work right here</p>
         </div>
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {portfolios.map(({ id, src, link }) => {
+          {portfolios.map(({ id, src, link, projectName }) => {
             return (
               <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                <img
-                  src={src}
-                  alt=''
-                  className='rounded-md duration-200 hover:scale-105'
-                />
+                <a href={link} target='_blank' rel='noreferrer'>
+                  <img
+                    src={src}
+                    alt={projectName}
+                    className='rounded-md duration-200 hover:scale-105'
+                  />
+                </a>
                 <div className='flex items-center justify-center'>
+                  <button className='w-1/2 m-4 duration-200 hover:scale-105 '>
+                    <a href={link} target='_blank' rel='noreferrer'>
+                      {projectName}
+                    </a>
+                  </button>
                   <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
                     <a href={link} target='_blank' rel='noreferrer'>
                       Code

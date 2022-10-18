@@ -13,17 +13,18 @@ const About = () => {
           </p>
         </div>
         <p className='text-xl mt-20'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque
-          quasi culpa repellendus iusto et aspernatur ipsum, consectetur
-          accusamus, dolore, sequi tempore libero soluta expedita debitis. Odio
-          minus quasi rem?
+          Software Engineer with 1+ year of Industry Experience in Full-stack
+          Dev. A Hard-working, ambitious and a proactive professional to use my
+          knowledge and skills to gain practical exposure. Being a quick learner
+          with great Communication, Quantitative and Technical skills, I wish to
+          develop a more rounded skill-set.
         </p>
         <br />
         <p className='text-xl'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sequi
-          eius laudantium maxime, reprehenderit doloremque dolorum, omnis totam
-          et, laboriosam modi repellat labore. Saepe veritatis quas hic dolores
-          iure ipsum.
+          Graduated from KLS Gogte Institute of Technology in Computer Science
+          in 2021. Currently working at Brillio tech. I have been working for a
+          Heath care Project, which gained me a lot of expertise in USA’s Health
+          Structure and their requirements.
         </p>
       </div>
     </div>
